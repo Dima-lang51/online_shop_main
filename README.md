@@ -8,7 +8,7 @@
 
 Инструкция по запуску собранного build в папке dist:
 1.С помощью командной строки перейти в папку dist
-2.Выполнить команду npm instal -g serve
+2.Выполнить команду npm install -g serve
 3.Запустить локальный сервер командой start json-server --watch db.json
 4.Выполнить команду serve -s dist
 
