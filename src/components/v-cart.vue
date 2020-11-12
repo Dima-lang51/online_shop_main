@@ -92,12 +92,25 @@ export default {
             padding: 16px;
             display: flex;
             justify-content: center;
-            background: #26ae68;
+            background: #9b9dfe;
             color: #ffffff;
             font-size: 20px;
         }
         .total_name {
             margin-right: 16px;
         }
+    }
+    
+     /* css Mobile */
+
+    /* CSS Mobile */
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 770px) {
+        .v-cart {
+            min-width: 100%;
+            height: 20%;
+            text-align: center;
+        }
+
     }
 </style>

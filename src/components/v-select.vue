@@ -63,9 +63,8 @@ export default {
 <style>
     .v-select {
         position: relative;
-        width: 200px;
+        width: 160px;
         cursor: pointer;
-        margin-bottom: 100px;
     }
     .title {
         border: solid 1px #aeaeae;
@@ -83,5 +82,18 @@ export default {
     }
     .options p:hover {
         background: #e7e7e7;
+    }
+    
+     /* css Mobile */
+
+    /* CSS Mobile */
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 770px) {
+        .v-select {
+            min-width: 30%;
+            height: 20%;
+            text-align: center;
+        }
+
     }
 </style>

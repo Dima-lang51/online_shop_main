@@ -1,7 +1,7 @@
 {
     "products": [
         {
-            "image": "1_small.jpg",
+            "image": "1.jpg",
             "name": "keyboard",
             "price": 1000,
             "article": "T1",
@@ -9,7 +9,7 @@
             "category": "Accessories"
     },
         {
-            "image": "2_small.jpg",
+            "image": "2.jpg",
             "name": "computer mouse",
             "price": 99,
             "article": "T2",
@@ -17,7 +17,7 @@
             "category": "Accessories"
     },
         {
-            "image": "3_small.jpg",
+            "image": "3.jpg",
             "name": "laptop",
             "price": 1750,
             "article": "T3",
@@ -25,7 +25,7 @@
             "category": "Laptop"
     },
         {
-            "image": "4_small.jpg",
+            "image": "4.jpg",
             "name": "monitor",
             "price": 999,
             "article": "T4",
@@ -33,7 +33,7 @@
             "category": "Accessories"
     },
         {
-            "image": "5_small.jpg",
+            "image": "5.jpg",
             "name": "Speakers for the computer",
             "price": 49,
             "article": "T5",
@@ -41,7 +41,7 @@
             "category": "Accessories"
     },
         {
-            "image": "6_small.jpg",
+            "image": "6.jpg",
             "name": "headphones",
             "price": 19,
             "article": "T6",

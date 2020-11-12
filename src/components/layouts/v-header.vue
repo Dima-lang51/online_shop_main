@@ -1,23 +1,46 @@
 <template>
     <div class="v-header">
-        <router-link :to="{name: 'mainPage'}">
-            <img src="../../assets/logo.png" alt="">
-        </router-link>
-        <div class="search-field">
-            <input type="text" v-model="searchValue">
-            <button class="search_bth">
-                <i class="material-icons" @click="search(searchValue)">search</i>
-            </button>
-            <button class="search_bth">
-                <i class="material-icons" @click="clearSearchField">cancel</i>
-            </button>
+        <div class="v-header_headerInside">
+            <router-link :to="{name: 'mainPage'}">
+                <img class="logo" src="../../assets/logo.gif" alt="">
+            </router-link>
+            <nav>
+                <router-link :to="{name: 'catalog'}">
+                    Catalog
+                </router-link>
+                <a href="#">Contacts</a>
+                <a href="#">Brands</a>
+            </nav>
+
+            <div id="number" class="phone mobile text num" style="color: #1ff1ff; text-align: center" name="phone_number">
+                <p>
+                    <a href="#">+7(999)888-77-66</a>
+                </p>
+            </div>
+
+            <div class="search-field">
+                <input type="text" v-model="searchValue">
+                <button class="search_bth">
+                    <i class="material-icons" @click="search(searchValue)">search</i>
+                </button>
+                <button class="search_bth">
+                    <i class="material-icons" @click="clearSearchField"><span class="material-icons">
+                            clear
+                        </span></i>
+                </button>
+            </div>
         </div>
+
     </div>
+
 </template>
 
 
 <script>
-    import {mapActions, mapGetters} from 'vuex'
+    import {
+        mapActions,
+        mapGetters
+    } from 'vuex'
 
     export default {
         name: "v-header",
@@ -58,24 +81,22 @@
 
 <style lang="scss">
     .v-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #26ae68;
-        padding: 16px;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
 
-        img {
-            width: 50px;
+        &_headerInside {
+            height: inherit;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            width: 100px;
         }
 
         .search-field {
-            padding: 16px;
+            padding: 20px;
             position: relative;
-            right: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -85,6 +106,44 @@
             margin-left: 16px;
             background: transparent;
             border: none;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        a {
+            text-decoration: none;
+            color: #551A8B;
+            display: inline-block;
+            padding: 0px 16px 0px 0px;
+        }
+
+        a:hover {
+            color: palevioletred;
+        }
+    }
+
+
+    /* css Mobile */
+
+    /* CSS Mobile */
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 770px) {
+        .v-header {
+            min-width: 100%;
+            height: 20%;
+            text-align: center;
+        }
+
+        .headerInside {
+            min-width: 100%;
+            height: 20%;
+            text-align: center;
         }
     }
 

@@ -58,6 +58,17 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss">
+ /* css Mobile */
 
+    /* CSS Mobile */
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 770px) {
+        .v-product-page {
+            min-width: 100%;
+            height: 20%;
+            text-align: center;
+        }
+
+    }
 </style>
